@@ -2,19 +2,22 @@
 int n = 5;
 string[]array = new string[n];
 
-for (int i = 0; i < n - 1; i++)
+void DataEnter(string[]_array)
+{for (int i = 0; i < n; i++)
 {
     Console.Write($"Введите {i} элемент строкового массива: ");
     array[i] = Console.ReadLine();
     
 }
+}
  void PrintArray(string[]_array)
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         Console.Write($"{array[i]}, ");
     }
 }
+ DataEnter(array);
  PrintArray(array);
  
  
