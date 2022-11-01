@@ -5,8 +5,18 @@ string[]array = new string[n];
 for (int i = 0; i < n - 1; i++)
 {
     Console.Write($"Введите {i} элемент строкового массива: ");
-    string.TryParse(Console.ReadLine()!, out array[i]);
+    array[i] = Console.ReadLine();
+    
 }
+ void PrintArray(string[]_array)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        Console.Write($"{array[i]}, ");
+    }
+}
+ PrintArray(array);
+ 
+ 
+ 
 
-
-Console.WriteLine("Hello, World!");
